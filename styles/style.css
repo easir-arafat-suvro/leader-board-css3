@@ -26,6 +26,47 @@ hr{
     margin-bottom: 27px;
 }
 
+/* -----------Navigation-Bar ------------*/
+
+.nav-bar {
+    display: flex;
+    background-color: rgb(86, 46, 255);
+    justify-content: space-between;
+    padding: 0 450px;
+}
+
+.logo,
+.btn-nav {
+    display: inline-flex;
+    color: white;
+    margin: 0 40px 0 35px;
+}
+
+h1 {
+    margin: 18px 12px;
+}
+
+.logo img {
+    width: 55px;
+    height: 62px;
+    margin-top: 12px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    margin: 20px 16px;
+    color: white;
+    font-weight: 700;
+}
+
+
+.btn-nav img {
+    width: 65px;
+    height: 65px;
+    padding-top: 10px;
+    padding: 10px;
+}
+
 /* top palyer style */
 
 .top-players{
