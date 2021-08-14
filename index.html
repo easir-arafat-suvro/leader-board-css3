@@ -5,178 +5,179 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leader board</title>
+    <title>Leader Board</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/1d56f64a1c.js" crossorigin="anonymous"></script>
+    <!-- style sheet -->
     <link rel="stylesheet" href="styles/style.css">
-    <style>
-        .course-white-background {
-            background-color: white;
-            margin: auto;
-            width: 60%;
-            height: 28.65vw;
-            border-radius: .5vw;
-        }
-
-        .course-white-background>h1 {
-            color: rgb(86, 46, 255);
-            margin-top: 1.5vw;
-            padding: 2vw 0 0 4vw;
-        }
-
-        .grid-container-latest-course {
-            /* border: 2px solid brown; */
-            display: flex;
-            margin: 0 5vw;
-        }
-
-        .grid-container-course {
-            /* border: 1px solid chartreuse; */
-            padding: .8vw 3vw .8vw .8vw;
-            margin: 0vw;
-        }
-
-        .grid-container-course p {
-            color: rgb(86, 46, 255);
-            font-size: large;
-            font-weight: 700;
-        }
-
-        .grid-container-course img {
-            width: 13.5vw;
-            height: 8vw;
-        }
-
-        .grid-container-course h1 {
-            margin: 1vw 2.5vw 1vw 0;
-        }
-
-        .footer {
-            display: grid;
-            border: 1px solid gray;
-            grid-template-columns: repeat(2, 1fr);
-            column-gap: 15px;
-            /* justify-content: space-between; */
-        }
-    </style>
 </head>
 
 <body>
+    <!-- header start -->
+    <header>
+
+    </header>
+    <!-- header end -->
     <main>
-        <header>
-            <nav class="nav-bar">
-
-                <span class="logo">
-                    <img src="images/icons/logo.png" alt="">
-                    <h1>Ideas</h1>
-                </span>
-
-                <span class="btn-nav">
-                    <a href="">Home</a>
-                    <a href="">About</a>
-                    <a href="">Works</a>
-                    <img src="images/icons/profile.png" alt="">
-                </span>
-
-            </nav>
-        </header>
-        <section>
-            <div class="background-white-center">
-                <h1>Top Player</h1>
-                <div class="top-player">
-                    <div class="display-images-name">
+        <!-- Top palyer and top blogs -->
+        <section class="container">
+            <div class="top-players">
+                <h2 class="section-title">Top Players</h2>
+                <div class="players">
+                    <!-- .player*6>img[src="images/players/player-$.png" alt=""]+h3{Top Player - $} -->
+                    <div class="player">
                         <img src="images/players/player-1.png" alt="">
-                        <span>John Smith</span>
+                        <h3 class="player-name">Top Player - 1</h3>
                     </div>
-
-                    <div class="display-images-name">
+                    <div class="player">
                         <img src="images/players/player-2.png" alt="">
-                        <span>Pro Rasel</span>
+                        <h3 class="player-name">Top Player - 2</h3>
                     </div>
-
-                    <div class="display-images-name">
+                    <div class="player">
                         <img src="images/players/player-3.png" alt="">
-                        <span>Shajadul Karim</span>
+                        <h3 class="player-name">Top Player - 3</h3>
                     </div>
-
-                    <div class="display-images-name">
+                    <div class="player">
+                        <img src="images/players/player-4.png" alt="">
+                        <h3 class="player-name">Top Player - 4</h3>
+                    </div>
+                    <div class="player">
                         <img src="images/players/player-5.png" alt="">
-                        <span>Abu Sufian</span>
+                        <h3 class="player-name">Top Player - 5</h3>
                     </div>
-
-                    <div class="display-images-name">
-                        <img src="images/players/player-5.png" alt="">
-                        <span>Maruf Raihan</span>
-                    </div>
-
-                    <div class="display-images-name">
+                    <div class="player">
                         <img src="images/players/player-6.png" alt="">
-                        <span>Mujahid</span>
+                        <h3 class="player-name">Top Player - 6</h3>
                     </div>
                 </div>
-                <hr>
-                <div class="top-blogs">
-                    <h1>Top Blogs</h1>
-                    <div class="top-blogs-grid">
-                        <div class="blog-images-subject">
-                            <img src="images/blogs/blog-1.png" alt="">
-                            <div class="blog-headings">
-                                <h2>13 of My Favorite</h2>
-                                <h2>UI/UX Goodies</h2>
-                                <p><span>By</span> Danny Sapio</p>
-                            </div>
+            </div>
+            <hr>
+            <div class="top-blogs">
+                <h2 class="section-title">Top Blogs</h2>
+                <div class="blogs">
+                    <article class="blog">
+                        <div class="thumbnail">
+                            <img src="images/blogs/blog-1.png" alt=""></ima>
                         </div>
-                        <div class="blog-images-subject">
-                            <img src="images/blogs/blog-2.png" alt="">
-                            <div class="blog-headings">
-                                <h2>UI cheat sheet:</h2>
-                                <h2list vs grid>
-                                    </h2>
-                                    <p><span>By</span> Tess Gadd</p>
-                            </div>
+                        <div class="blog-info">
+                            <h3 class="blog-title">13 of my favirate UI/UX Goodlise</h3>
+                            <p class="blog-author">By <a href="">Stephen Nisdon</a></p>
                         </div>
-                        <div class="blog-images-subject">
-                            <img src="images/blogs/blog-3.png" alt="">
-                            <div class="blog-headings">
-                                <h2>7 typography tips</h2>
-                                <h2>for intergace design</h2>
-                                <p><span>By</span> Jeremiah Lam</p>
-                            </div>
+                    </article>
+                    <article class="blog">
+                        <div class="thumbnail">
+                            <img src="images/blogs/blog-2.png" alt=""></ima>
                         </div>
-                        <div class="blog-images-subject">
-                            <img src="images/blogs/blog-4.png" alt="">
-                            <div class="blog-headings">
-                                <h2>Your Logo is</h2>
-                                <h2>copied</h2>
-                                <p><span>By</span> Feriad Voglor</p>
-                            </div>
+                        <div class="blog-info">
+                            <h3 class="blog-title">UI cheat sheet:
+                                list vs grids</h3>
+                            <p class="blog-author">By <a href="">Stephen Nisdon</a></p>
                         </div>
-                    </div>
+                    </article>
+                    <article class="blog">
+                        <div class="thumbnail">
+                            <img src="images/blogs/blog-3.png" alt=""></ima>
+                        </div>
+                        <div class="blog-info">
+                            <h3 class="blog-title"> typography tips
+                                for interface design</h3>
+                            <p class="blog-author">By <a href="">Stephen Nisdon</a></p>
+                        </div>
+                    </article>
+                    <article class="blog">
+                        <div class="thumbnail">
+                            <img src="images/blogs/blog-4.png" alt=""></ima>
+                        </div>
+                        <div class="blog-info">
+                            <h3 class="blog-title">Your logo is
+                                copied</h3>
+                            <p class="blog-author">By <a href="">Stephen Nisdon</a></p>
+                        </div>
+                    </article>
                 </div>
-
             </div>
         </section>
-        <section class="course-white-background">
-            <h1>Latest Course</h1>
-            <div class="grid-container-latest-course">
-                <div class="grid-container-course">
-                    <img src="images/courses/course-1.png" alt="">
-                    <h1>React Full Course</h1>
-                    <p>Reef Karkoff</p>
-                    <div class="footer">
-                        <span>4.5</span>
-                        <span>Clock</span>
+        <!-- Latest Course -->
+        <section class="container">
+            <h2 class="section-title">Latest Courses</h2>
+            <div class="courses">
+                <div class="course">
+                    <div class="course-banner">
+                        <img src="images/courses/course-1.png" alt="">
+                        <div class="course-detail">
+                            <h3>React the complete course 2020</h3>
+                            <p class="course-author">reed kakoff</p>
+                            <div class="course-info">
+                                <div>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star empty"></i>
+                                    <span>4.5</span>
+                                </div>
+                                <div>
+                                    <i class="fas fa-clock"></i>
+                                    1:30hr
+                                </div>
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="grid-container-course">
-                    <img src="images/courses/course-2.png" alt="">
-                    <h1>React Full Course</h1>
-                    <p>Wolter Scott</p>
-                    <div class="footer"><span>4.3</span><span>Clock</span></div>
+                <div class="course">
+                    <div class="course-banner">
+                        <img src="images/courses/course-2.png" alt="">
+                        <div class="course-detail">
+                            <h3>React the complete course 2020</h3>
+                            <p class="course-author">reed kakoff</p>
+                            <div class="course-info">
+                                <div>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star empty"></i>
+                                    <span>4.5</span>
+                                </div>
+                                <div>
+                                    <i class="fas fa-clock"></i>
+                                    1:30hr
+                                </div>
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="grid-container-course">
-                    <img src="images/courses/course-3.png" alt="">
-                    <h1>React Full Course</h1>
-                    <p>Reed Krakoff</p>
-                    <div class="footer"><span>4.5</span><span>Clock</span></div>
+                <div class="course">
+                    <div class="course-banner">
+                        <img src="images/courses/course-3.png" alt="">
+                        <div class="course-detail">
+                            <h3>React the complete course 2020</h3>
+                            <p class="course-author">reed kakoff</p>
+                            <div class="course-info">
+                                <div>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star empty"></i>
+                                    <span>4.5</span>
+                                </div>
+                                <div>
+                                    <i class="fas fa-clock"></i>
+                                    1:30hr
+                                </div>
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

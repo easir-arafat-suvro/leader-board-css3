@@ -1,128 +1,157 @@
-body {
-    margin: 0px;
-    background-color: rgb(239, 239, 239);
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common styles or utility */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
 }
 
-/* -----------Navigation-Bar ------------*/
-
-.nav-bar {
+main{
     display: flex;
-    background-color: rgb(86, 46, 255);
-    justify-content: space-between;
-    padding: 0 18.5vw;
+    flex-direction: column;
+    align-items: center;
 }
 
-.logo,
-.btn-nav {
-    display: inline-flex;
-    color: white;
-    margin: 0 2vw 0 1.7vw;
-}
-
-h1 {
-    margin: 1.8vw 1.2vw;
-}
-
-.logo img {
-    width: 3.5vw;
-    height: 4vw;
-    margin-top: .5vw;
-}
-
-.nav-bar a {
-    text-decoration: none;
-    margin: 2vw 1.6vw;
-    color: white;
-    font-weight: 700;
-}
-
-
-.btn-nav img {
-    width: 3.5vw;
-    height: 3.5vw;
-    padding-top: .7vw;
-}
-
-/* ------------Top-Player-Section ---------------*/
-
-.background-white-center h1 {
-    color: rgb(86, 46, 255);
-    margin-top: 1.5vw;
-    padding: 2vw 0 0 4vw;
-
-}
-
-.background-white-center {
+.container{
     background-color: white;
-    margin: auto;
-    width: 60%;
-    height: 38.65vw;
-    border-radius: .5vw;
+    width: 870px;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
 }
 
-.top-player {
+/* top palyer style */
+
+.top-players{
+    margin-bottom: 30px;
+}
+.section-title{
+    color: #562EFF ;
+    font-size: 24px;
+    margin-top: 3px;
+}
+.players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1vw;
-    padding-bottom: .5vw;
+    grid-row-gap: 30px;
 }
 
-.display-images-name {
+.player{
     display: flex;
-    /* border: 1px solid gray; */
     align-items: center;
-    margin-left: 5vw;
-    padding-left: .3vw;
-
 }
 
-.display-images-name img {
-    width: 2.9vw;
-    height: 2.9vw;
-    padding-right: .5vw;
+.player img {
+    width: 56px;
+    height: 56px;
+}
+.player-name{
+    margin-left: 16px;    
+    font-size: 18px;
 }
 
-hr{
-    margin: 1.75vw 5.2vw;
-}
-
-/*--------- Top-Blogs ---------------*/
-
-.top-blogs-grid {
+/* -----------------
+  top blog styles
+----------------- */
+.blogs{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1vw;
-    /* border: 2px solid hotpink; */
-    padding-left: 4vw;
-    margin: 1vw;
+    grid-row-gap: 26px;
 }
 
-.blog-images-subject {
+.blog{
     display: flex;
-    /* border: 1px solid green; */
+}
+
+.blog img{
+    width: 177px;
+    height: 117px;
+}
+
+.blog-info{
+    margin-left: 16px;
+}
+
+.blog-title{
+    font-size: 20px;
+}
+
+.blog-author{
+    color: #9f9f9f;
+    font-size: 16px;
+}
+
+.blog-author a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #562EFF;
+}
+
+/* courses style */
+
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
 
 }
 
-.blog-images-subject img {
-    /* width: 40%; */
-    width: 11vw;
-    height: 7.6vw;
+.course .course-banner img{
+    width: 224px;
+    height: 104px;
 }
 
-.blog-headings {
-    margin-left: 1.5vw;
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.blog-headings p {
-    color: rgb(86, 46, 255);
-    font-weight: 700;
+.fa-star{
+    font-size: 12px;
 }
 
-.blog-headings p span {
-    color: gray;
+.fa-star.filled{
+    color: #ffc014;
+}
+.fa-star.empty{
+    color: #aeaeae;
 }
 
-.top-blogs h1 {
-    padding-top: .5vw;
-    /* border: 1px solid hotpink; */
+/*-------------------
+   Media Quaries 
+--------------------*/
+
+/* Mobile devices */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses {
+        grid-template-columns: repeat(1, 1fr);  
+
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+}
+
+/* tablet devices */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
